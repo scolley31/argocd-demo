@@ -27,5 +27,5 @@ jobs:
       - name: Run kube-score
         run: |
           docker pull zegl/kube-score:latest
-          docker run -v $(pwd):/project zegl/kube-score:latest score app/*.yaml
+          docker run -v $(pwd):/project zegl/kube-score:latest score kubernetes/*.yaml
 
