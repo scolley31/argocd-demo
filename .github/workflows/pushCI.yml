@@ -17,7 +17,7 @@ jobs:
       - uses: docker://ghcr.io/yannh/kubeconform:latest
         with:
           entrypoint: '/kubeconform'
-          args: "-summary -output json app/"
+          args: "-summary -output json kubernetes/"
   validate-k8s:
     needs: kubeconform
     runs-on: ubuntu-latest
